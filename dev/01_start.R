@@ -20,12 +20,12 @@
 ## 
 golem::fill_desc(
   pkg_name = "wedding",                                           # The Name of the package containing the App 
-  pkg_title = "App for Margot and David weeding",                  # The Title of the package containing the App 
-  pkg_description = "App for Margot and David weeding. 
+  pkg_title = "App for Jade and Jack weeding",                    # The Title of the package containing the App 
+  pkg_description = "App for Jade and Jack weeding. 
   Contains all the information relative to the wedding.",          # The Description of the package containing the App 
-  author_first_name = "Margot",                                    # Your First Name
-  author_last_name = "Brard",                                      # Your Last Name
-  author_email = "margot@thinkr.fr",                               # Your Email
+  author_first_name = "Jack",                                      # Your First Name
+  author_last_name = "Alperstein",                                      # Your Last Name
+  author_email = "jackalperstein@gmail.com",                               # Your Email
   repo_url = NULL                                                  # The URL of the GitHub Repo (optional) 
 )     
 

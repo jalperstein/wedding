@@ -1,16 +1,23 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# wedding <img src="man/figures/logo.png" align="right" alt="" width="120" />
+# wedding <img src="man/figures/logo.png" align="right" width="120"/>
 
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/ThinkR-open/wedding/workflows/R-CMD-check/badge.svg)](https://github.com/ThinkR-open/wedding/actions)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+
 <!-- badges: end -->
 
-{wedding} helps you to prepare and manage your wedding 👰👰 - 👰🤵 - 🤵🤵
+{wedding} helps you to prepare and manage your wedding 👰👰 - 👰🤵 -
+🤵🤵
 
 ## Demo
 
@@ -21,7 +28,7 @@ Login to access the app: *welcome* <br /> Password to access the app:
 *bigday* <br /> Password to access the tab dedicated to brides/grooms:
 *onlyforbride*
 
-<img src="man/figures/home-page.png" width="100%" />
+<img src="man/figures/home-page.png" width="100%"/>
 
 You will find below how to run this demo app from RStudio Cloud.
 
@@ -51,14 +58,14 @@ You will find below how to run this demo app from RStudio Cloud.
 -   *Espace des mariés*: Groom’s area (expenses, guests, menu,
     `{ggplot2}` seating plan)
 
-<img src="man/figures/seating-plan-page.png" width="100%" />
+<img src="man/figures/seating-plan-page.png" width="100%"/>
 
 ## Data
 
 The application is based on two datasets stored on Google Drive. They
 will be **updated according to the user’s navigation in the app**.
 
-<img src="man/figures/data-examples.png" width="70%" style="display: block; margin: auto;" />
+<img src="man/figures/data-examples.png" width="70%" style="display: block; margin: auto;"/>
 
 -   **data_guests**: contains information about your guests (name,
     attendance at the vin d’honneur, attendance at the dinner,
@@ -96,7 +103,7 @@ Raw toy datasets can be accessed directly here:
     pre-filled. The guests will be asked to select their first name from
     a **drop-down list**. *This is the default feature for the app.*
 
-<img src="man/figures/rsvp_list.png" width="70%" style="display: block; margin: auto;" />
+<img src="man/figures/rsvp_list.png" width="70%" style="display: block; margin: auto;"/>
 
 -   Or you do not create your guest list beforehand. At the beginning,
     your spreadsheet is empty. In this case, the guests will be asked to
@@ -104,7 +111,7 @@ Raw toy datasets can be accessed directly here:
     go to the spreadsheet regularly to associate guests to a table in
     your seating plan.
 
-<img src="man/figures/rsvp_text.png" width="70%" style="display: block; margin: auto;" />
+<img src="man/figures/rsvp_text.png" width="70%" style="display: block; margin: auto;"/>
 
 <br/>
 
@@ -124,7 +131,7 @@ Sys.setenv(USE_PREFILLED_DATA_GUEST = "no")
 ## Run the demo app from RStudio Cloud
 
 -   Save the two toy datasets (see above) in your Google Drive storage
--   Acess the project stored in RStudio Cloud:
+-   Access the project stored in RStudio Cloud:
     <https://rstudio.cloud/project/2548794>
 -   In Git tab, check that you are in the *main* branch and pull the
     latest version of the branch
@@ -137,7 +144,7 @@ remotes::install_github("ThinkR-open/wedding")
 -   Create environment variables mandatory for the app
 
 ``` r
-Sys.setenv(GOOGLE_MAIL = "wedding.r.package@gmail.com") # Replace wedding.r.package@gmail.com by your gmail adress
+Sys.setenv(GOOGLE_MAIL = "jackalperstein@gmail.com") # Replace wedding.r.package@gmail.com by your gmail adress
 Sys.setenv(LOGIN_USER = "welcome")
 Sys.setenv(PWD_USER = "bigday")
 Sys.setenv(PWD_COUPLE = "onlyforbride")
@@ -151,7 +158,7 @@ Sys.setenv(IMG_BACKGROUND = "wedding-background-demo-compressed.jpg")
 ``` r
 # install.packages(c("gargle", "googledrive"))
 options(gargle_oauth_cache = ".secrets")
-options(gargle_quiet = FALSE)
+options(gargle_verbosity = "debug")
 googledrive::drive_auth(cache = ".secrets", 
                         email = Sys.getenv("GOOGLE_MAIL"))
 ```
