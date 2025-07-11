@@ -27,8 +27,8 @@ mod_tab_couple_ui <- function(id){
              # Texte
              tags$div(class = "landing-block foreground-content",
                       tags$div(class = "foreground-text",
-                               tags$h1("Margot & David", style = "font-family: 'Bauer Bodoni Std 1'; letter-spacing:10px"),
-                               tags$p("se disent oui", style = "font-family: 'Old script'; font-size:50px; letter-spacing:5px"),
+                               tags$h1("Jade & Jack", style = "font-family: 'Bauer Bodoni Std 1'; letter-spacing:10px"),
+                               tags$p("16 Weddings and Counting", style = "font-family: 'Old script'; font-size:50px; letter-spacing:5px"),
                                tags$br(),
                                tags$p("02 octobre 2021", style = "font-family: 'Bauer Bodoni Std 1'; letter-spacing:10px")
                       )
